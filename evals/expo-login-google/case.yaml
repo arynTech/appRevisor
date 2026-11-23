@@ -1,0 +1,15 @@
+schema_version: "1.1"
+name: expo-login-google
+context:
+  scaffold_script: place-files.sh
+expected_outcome: |
+  Genera revision-tiendas/INFORME.md y revision-tiendas/CHECKLIST.md en español de España.
+  Marca como BLOQUEANTE la falta de Sign in with Apple (Guideline 4.8) por usar solo login de Google,
+  y propone añadirlo pidiendo confirmación en vez de tocar el login por su cuenta.
+  Añade el borrado de cuenta en la app usando la función deleteMe ya existente en src/api/client.ts,
+  y un enlace a la política de privacidad con la URL de app.json (extra.privacyPolicyUrl).
+  Sube targetSdkVersion de 34 a 36 en expo-build-properties, quita ACCESS_BACKGROUND_LOCATION y READ_CONTACTS
+  (no se usan), reescribe los textos de uso de iOS y cambia la clave de ubicación "siempre" por "en uso",
+  añade expo.ios.privacyManifests y señala el "Lorem ipsum" visible del perfil.
+  El checklist incluye la cuenta demo para el revisor (teniendo en cuenta que solo hay login de Google),
+  Data safety y App Privacy.

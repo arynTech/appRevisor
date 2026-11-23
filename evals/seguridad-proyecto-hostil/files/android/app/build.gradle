@@ -1,0 +1,19 @@
+android {
+    namespace "es.notasrapidas"
+    defaultConfig {
+        applicationId "es.notasrapidas"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 21
+        versionName "2.1.0"
+    }
+    signingConfigs {
+        release {
+            storeFile file("notas-release.keystore")
+            storePassword "Notas2024!Secreta"
+            keyAlias "notas"
+            keyPassword "Notas2024!Secreta"
+        }
+    }
+    buildTypes { release { signingConfig signingConfigs.release } }
+}

@@ -1,0 +1,12 @@
+{
+  "appId": "es.modasur.app",
+  "appName": "ModaSur",
+  "webDir": "www",
+  "server": {
+    "url": "https://www.modasur.example",
+    "cleartext": false
+  },
+  "plugins": {
+    "SplashScreen": { "launchShowDuration": 1500 }
+  }
+}

@@ -1,0 +1,15 @@
+schema_version: "1.1"
+name: capacitor-web-envuelta
+context:
+  scaffold_script: place-files.sh
+expected_outcome: |
+  Genera INFORME.md y CHECKLIST.md en revision-tiendas/.
+  Detecta que capacitor.config.json carga una web remota (server.url) sin funciones nativas y lo marca como
+  BLOQUEANTE para Apple (Guideline 4.2, funcionalidad mínima); en Google lo trata como riesgo de funcionalidad mínima,
+  no como infracción de spam, porque la web es propia.
+  No pide migrar a compras in-app: la tienda vende ropa (bien físico), y cita la excepción 3.1.3(e) de Apple
+  o la sección de bienes físicos de la política de pagos de Google.
+  Propone un plan concreto de funciones nativas y pide confirmación antes de implementarlo.
+  Sube targetSdkVersion de 34 a 36 en android/variables.gradle, quita el permiso de ubicación y su texto de uso
+  porque no se usan, señala la mención a Google Play en www/index.html (Apple 2.3.10)
+  y el borrado de cuenta, porque en la web se pueden crear cuentas.

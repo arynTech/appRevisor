@@ -1,0 +1,24 @@
+name: fitplan
+description: Planes de entrenamiento personalizados.
+publish_to: 'none'
+version: 1.4.0+12
+
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.2
+  url_launcher: ^6.3.1
+  image_picker: ^1.1.2
+  shared_preferences: ^2.3.2
+  telephony: ^0.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true

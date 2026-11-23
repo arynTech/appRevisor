@@ -1,0 +1,25 @@
+# Salidas de la skill y de las pruebas
+revision-tiendas/
+*-workspace/
+evals/results/
+graphify-out/
+
+# Python
+__pycache__/
+*.pyc
+
+# Secretos: nunca deben subirse
+.env
+.env.*
+*.jks
+*.keystore
+*.p8
+*.p12
+*.pem
+key.properties
+# Excepción: el caso de prueba de seguridad necesita su .env falso
+!evals/seguridad-proyecto-hostil/files/.env
+
+# Sistema
+.DS_Store
+Thumbs.db

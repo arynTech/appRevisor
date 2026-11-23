@@ -1,0 +1,12 @@
+{
+  "name": "notasrapidas",
+  "version": "2.1.0",
+  "scripts": {
+    "postinstall": "node scripts/setup.js"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-native": "0.76.3",
+    "@react-native-async-storage/async-storage": "^2.1.0"
+  }
+}

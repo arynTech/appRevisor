@@ -1,0 +1,14 @@
+schema_version: "1.1"
+name: flutter-suscripcion
+context:
+  scaffold_script: place-files.sh
+expected_outcome: |
+  Genera INFORME.md y CHECKLIST.md en revision-tiendas/.
+  Marca como BLOQUEANTE que la suscripción premium (contenido digital) se cobre con un checkout web externo
+  (Apple 3.1.1 y política de pagos de Google Play) y propone migrar a StoreKit / Play Billing
+  (in_app_purchase o RevenueCat) con botón de restaurar compras, sin modificar el paywall sin confirmación.
+  Marca READ_SMS/RECEIVE_SMS como BLOQUEANTE y propone SMS Retriever/User Consent; quita QUERY_ALL_PACKAGES
+  y READ_MEDIA_IMAGES; sube targetSdk de 33 a 36; corrige la firma release con la clave debug;
+  sube el deployment target de iOS de 12.0 a 13.0 o más en Podfile y pbxproj; añade NSPhotoLibraryUsageDescription;
+  crea ios/Runner/PrivacyInfo.xcprivacy indicando que hay que añadirlo al target.
+  No marca como ausentes el borrado de cuenta ni la política de privacidad, que ya existen en settings_screen.dart.
